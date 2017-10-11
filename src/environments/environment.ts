@@ -4,5 +4,6 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  translateUrl: (lang: string) => `http://localhost:4200/assets/some/path/i18n/${lang}.json`
 };
